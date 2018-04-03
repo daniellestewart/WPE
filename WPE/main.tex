@@ -1,5 +1,5 @@
-%\documentclass{sig-alternate-05-2015}
-\documentclass{llncs}
+\documentclass{sig-alternate-05-2015}
+%\documentclass{llncs}
 \usepackage{makeidx}
 \usepackage{tabularx,colortbl}
 \usepackage[dvipsnames]{xcolor}
@@ -57,6 +57,7 @@
 \DeclareMathOperator{\kfalse}{false}
 \DeclareMathOperator{\kselect}{select}
 \DeclareMathOperator{\ran}{range}
+\definecolor{mypink}{rgb}{0.858, 0.188, 0.478}
 \newcommand{\lbb}{[\![}
 \newcommand{\rbb}{]\!]}
 \newcommand{\expr}{\phi}
@@ -83,25 +84,40 @@
 \newcommand{\ucbfalg}{\texttt{\small{IVC\_UCBF}}}
 
 
-\title{Safety Annex for the Architecture Analysis and Design Language}
+% paper title
+% can use linebreaks \\ within to get better formatting as desired
+\title{Written Preliminary Examination Report}
+%\subtitle{[subtitle]
+%\titlenote{A full version of this paper is available as
+%\textit{Author's Guide to Preparing ACM SIG Proceedings Using
+%\LaTeX$2_\epsilon$\ and BibTeX} at
+%\texttt{www.acm.org/eaddress.htm}}}
+\numberofauthors{1} %  in this sample file, there are a *total*
+% of EIGHT authors. SIX appear on the 'first-page' (for formatting
+% reasons) and the remaining two appear in the \additionalauthors section.
 %
-\author{Danielle Stewart\inst{1}
-\and Jing (Janet) Liu\inst{2}
-\and Michael W. Whalen\inst{1}
-\and Darren Cofer\inst{2}
-\and Michael Peterson\inst{3}}
-\institute{University of Minnesota\\Department of Computer
-Science and Engineering\\
-\email{dkstewar, whalen}@cs.umn.edu
-\and
-Rockwell Collins\\
-Advanced Technology Center\\
-\email{Jing.Liu, Darren.Cofer}@rockwellcollins.com
-\and
-Rockwell Collins\\
-Commercial Systems Flight Controls Safety Engineering\\
-\email{Michael.Peterson}@rockwellcollins.com
-}
+\author{
+% You can go ahead and credit any number of authors here,
+% e.g. one 'row of three' or two rows (consisting of one row of three
+% and a second row of one, two or three).
+%
+% The command \alignauthor (no curly braces needed) should
+% precede each author name, affiliation/snail-mail address and
+% e-mail address. Additionally, tag each line of
+% affiliation/address with \affaddr, and tag the
+% e-mail address with \email.
+%
+% 1st. author
+\alignauthor
+Danielle Stewart\\
+       \affaddr{Department of Computer Science \& Engineering}\\
+       \affaddr{University of Minnesota}\\
+       \affaddr{MN, USA}\\
+       \email{dkstewar@umn.edu}
+       }
+
+
+
 \maketitle
 
 \begin{abstract}
@@ -110,34 +126,20 @@ This paper describes a new methodology with tool support for model-based safety 
 
 \end{abstract}
 
-\keywords{Model-based systems engineering, fault analysis, safety engineering}
+\keywords{Model-based systems engineering; fault analysis; safety engineering}
 
 \input{introduction}
 
-\input{prelim}
+\input{background}
 
-\input{detailed_approach}
-
-%\input{safety_modeling}
-
-%\input{functionality}
-
-%\input{architectureimplementation}
+\input{safety_annex}
 
 \input{case_study}
 
-\input{related_work}
+\input{future_work}
 
 \input{conclusion}
-%ACKNOWLEDGMENTS are optional
-%TODO: Fill in for final version
-%\vspace{0.08in}
 
-
-%\textbf{Acknowledgments:}
-%This work was supported by
-
-%We thank XXXX
 \vspace{-0.40cm}
 \bibliographystyle{abbrv}
 \bibliography{biblio}

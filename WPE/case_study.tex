@@ -51,16 +51,14 @@ The last mode of operation of the WBS is the \textit{emergency} mode. This is su
 
 The high level wheel brake system architecture is shown in Figure~\ref{fig:wbs1} as shown in AIR6110. 
 
-\begin{figure}[h!]
-	\vspace{-0.17in}
+\begin{figure*}[h!]
 	\begin{center}
 		%\includegraphics[trim=0 330 150 0,clip,width=1.0\textwidth]{images/pump_fault.png}
-		\includegraphics[trim=0 0 0 0,clip,width=1.0\textwidth]{images/wbs_arp4761.png}
+		\includegraphics[trim=0 0 0 0,clip,width=0.7\textwidth]{images/wbs_arp4761.png}
 		\caption{High level Wheel Brake System}
  		\label{fig:wbs1}
 	\end{center}
-	\vspace{-0.40in}
-\end{figure}
+\end{figure*}
 
 The model contains 30 different kinds of components, 169 component instances, a model depth of 5 hierarchical levels.  The model includes one top-level assumption and  11 top-level system properties, with 113 guarantees allocated to subsystems.  There are a total of 33 different fault types and 141 fault instances within the model.  The large number of fault instances is due to the redundancy in the system design and its replication to control 8 wheels. %\janet{AGREE validates that each component's assumptions are either met by guarantees from another component or system level assumptions. System level assumptions are to be validated manually by system engineers.}
 
